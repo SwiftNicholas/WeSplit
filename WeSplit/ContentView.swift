@@ -25,7 +25,7 @@ struct ContentView: View {
     // MARK: - Calculations
     var currentTip: Double {return Double(tipPercentages[selectedTipPercentage])}
     var orderAmount: Double {return Double(checkAmount) ?? 0}
-    var peopleCount: Double {return Double(numberOfPeople + 2)}
+    var peopleCount: Double {return Double(numberOfPeople)}
     var tipValue: Double {return (orderAmount/100) * currentTip }
     var total: Double {return orderAmount + tipValue}
     var totalPerPerson: Double {return total/peopleCount}
